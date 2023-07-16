@@ -1,0 +1,15 @@
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\bin\Debug\DentalClinic.exe.config
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\bin\Debug\DentalClinic.exe
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\bin\Debug\DentalClinic.pdb
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.csproj.AssemblyReference.cache
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.csproj.SuggestedBindingRedirects.cache
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.CreateAccount.resources
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.DentistAuthentication.resources
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.DentistMenu.resources
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.MainPage.resources
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.PatientAuthentication.resources
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.Properties.Resources.resources
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.csproj.GenerateResource.cache
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.csproj.CoreCompileInputs.cache
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.exe
+D:\Files\University\An III\Semestrul I\SincreticBD\Dental CLinic Mangement System\DentalClinic\DentalClinic\obj\Debug\DentalClinic.pdb
