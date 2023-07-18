@@ -77,6 +77,7 @@
             this.btnPatient.TabIndex = 6;
             this.btnPatient.Text = "Patient";
             this.btnPatient.UseVisualStyleBackColor = true;
+            this.btnPatient.Click += new System.EventHandler(this.btnPatient_Click);
             // 
             // MainPage
             // 
