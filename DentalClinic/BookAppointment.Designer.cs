@@ -33,10 +33,10 @@
             this.dpickerAppointDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbRequiredDentist = new System.Windows.Forms.ComboBox();
-            this.cmbHour = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmbHour = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnProceed
@@ -48,6 +48,7 @@
             this.btnProceed.TabIndex = 57;
             this.btnProceed.Text = "Proceed";
             this.btnProceed.UseVisualStyleBackColor = true;
+            this.btnProceed.Click += new System.EventHandler(this.btnProceed_Click);
             // 
             // btnBack
             // 
@@ -58,6 +59,7 @@
             this.btnBack.TabIndex = 56;
             this.btnBack.Text = "<< Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // dpickerAppointDate
             // 
@@ -80,32 +82,13 @@
             // 
             // cmbRequiredDentist
             // 
+            this.cmbRequiredDentist.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbRequiredDentist.FormattingEnabled = true;
             this.cmbRequiredDentist.Location = new System.Drawing.Point(376, 290);
             this.cmbRequiredDentist.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRequiredDentist.Name = "cmbRequiredDentist";
             this.cmbRequiredDentist.Size = new System.Drawing.Size(198, 21);
             this.cmbRequiredDentist.TabIndex = 53;
-            // 
-            // cmbHour
-            // 
-            this.cmbHour.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.cmbHour.FormattingEnabled = true;
-            this.cmbHour.Items.AddRange(new object[] {
-            "09:00",
-            "10:00",
-            "11:00",
-            "12:00",
-            "13:00",
-            "14:00",
-            "15:00",
-            "16:00",
-            "17:00"});
-            this.cmbHour.Location = new System.Drawing.Point(376, 239);
-            this.cmbHour.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbHour.Name = "cmbHour";
-            this.cmbHour.Size = new System.Drawing.Size(198, 21);
-            this.cmbHour.TabIndex = 52;
             // 
             // label4
             // 
@@ -137,6 +120,27 @@
             this.label1.TabIndex = 49;
             this.label1.Text = "BOOK AN APPOINTMENT";
             // 
+            // cmbHour
+            // 
+            this.cmbHour.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.cmbHour.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbHour.FormattingEnabled = true;
+            this.cmbHour.Items.AddRange(new object[] {
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00"});
+            this.cmbHour.Location = new System.Drawing.Point(376, 239);
+            this.cmbHour.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbHour.Name = "cmbHour";
+            this.cmbHour.Size = new System.Drawing.Size(198, 21);
+            this.cmbHour.TabIndex = 52;
+            // 
             // BookAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +158,7 @@
             this.Name = "BookAppointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointment booking";
+            this.Load += new System.EventHandler(this.BookAppointment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,9 +171,9 @@
         private System.Windows.Forms.DateTimePicker dpickerAppointDate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbRequiredDentist;
-        private System.Windows.Forms.ComboBox cmbHour;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbHour;
     }
 }

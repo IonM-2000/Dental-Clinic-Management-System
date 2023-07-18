@@ -17,6 +17,13 @@ namespace DentalClinic
             InitializeComponent();
         }
 
+        private void btnPatient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new PatientAuthentication();
+            f.ShowDialog();
+            this.Close();
+        }
         private void btnAdmin_Click(object sender, EventArgs e)
         {
 

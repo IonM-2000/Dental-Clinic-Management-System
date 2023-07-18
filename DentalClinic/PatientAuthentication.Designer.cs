@@ -47,6 +47,7 @@
             this.btnCreateAccount.TabIndex = 37;
             this.btnCreateAccount.Text = "Create account";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
+            this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
             // 
             // btnInapoi
             // 
@@ -57,6 +58,7 @@
             this.btnInapoi.TabIndex = 36;
             this.btnInapoi.Text = "<< Back";
             this.btnInapoi.UseVisualStyleBackColor = true;
+            this.btnInapoi.Click += new System.EventHandler(this.btnInapoi_Click);
             // 
             // txtUsername
             // 
@@ -75,6 +77,7 @@
             this.btnLogIn.TabIndex = 34;
             this.btnLogIn.Text = "Log in";
             this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // txtPassword
             // 

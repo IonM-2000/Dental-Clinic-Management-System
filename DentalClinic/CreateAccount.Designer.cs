@@ -77,6 +77,7 @@
             this.btnBack.TabIndex = 66;
             this.btnBack.Text = "<< Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label10
             // 
@@ -216,6 +217,7 @@
             this.btnProceed.TabIndex = 51;
             this.btnProceed.Text = "Proceed";
             this.btnProceed.UseVisualStyleBackColor = true;
+            this.btnProceed.Click += new System.EventHandler(this.btnProceed_Click);
             // 
             // label1
             // 
