@@ -46,7 +46,7 @@
             this.btnBack.TabIndex = 52;
             this.btnBack.Text = "<< Back";
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnInapoi_Click);
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // pictureBox1
             // 

@@ -12,12 +12,14 @@ namespace DentalClinic
 {
     public partial class DentistMenu : Form
     {
-        public DentistMenu()
+        private ulong id_dentist;
+        public DentistMenu(ulong id)
         {
             InitializeComponent();
+            this.id_dentist = id;
         }
 
-        private void btnInapoi_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
 
         }

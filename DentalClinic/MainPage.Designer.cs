@@ -66,6 +66,7 @@
             this.btnDentist.TabIndex = 7;
             this.btnDentist.Text = "Dentist";
             this.btnDentist.UseVisualStyleBackColor = true;
+            this.btnDentist.Click += new System.EventHandler(this.btnDentist_Click);
             // 
             // btnPatient
             // 

@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCreateAccount = new System.Windows.Forms.Button();
-            this.btnInapoi = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -38,25 +37,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnCreateAccount
+            // btnBack
             // 
-            this.btnCreateAccount.Location = new System.Drawing.Point(280, 331);
-            this.btnCreateAccount.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCreateAccount.Name = "btnCreateAccount";
-            this.btnCreateAccount.Size = new System.Drawing.Size(161, 36);
-            this.btnCreateAccount.TabIndex = 45;
-            this.btnCreateAccount.Text = "Create account";
-            this.btnCreateAccount.UseVisualStyleBackColor = true;
-            // 
-            // btnInapoi
-            // 
-            this.btnInapoi.Location = new System.Drawing.Point(19, 489);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInapoi.Name = "btnInapoi";
-            this.btnInapoi.Size = new System.Drawing.Size(97, 36);
-            this.btnInapoi.TabIndex = 44;
-            this.btnInapoi.Text = "<< Back";
-            this.btnInapoi.UseVisualStyleBackColor = true;
+            this.btnBack.Location = new System.Drawing.Point(334, 331);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(97, 36);
+            this.btnBack.TabIndex = 44;
+            this.btnBack.Text = "<< Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // txtUsername
             // 
@@ -75,6 +65,7 @@
             this.btnLogIn.TabIndex = 42;
             this.btnLogIn.Text = "Log in";
             this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // txtPassword
             // 
@@ -120,8 +111,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 541);
-            this.Controls.Add(this.btnCreateAccount);
-            this.Controls.Add(this.btnInapoi);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.txtPassword);
@@ -137,9 +127,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnCreateAccount;
-        private System.Windows.Forms.Button btnInapoi;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.TextBox txtPassword;

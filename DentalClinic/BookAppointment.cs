@@ -26,7 +26,7 @@ namespace DentalClinic
         {
             using (MySqlConnection conn = new MySqlConnection(connStr))
             {
-                string query = "SELECT id_medic, nume, prenume FROM medici WHERE bool_angajat = 1";
+                string query = "SELECT id_dentist, nume, prenume FROM medici WHERE bool_angajat = 1";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 conn.Open();
                 MySqlDataReader rdr = cmd.ExecuteReader();
@@ -62,7 +62,7 @@ namespace DentalClinic
                     string[] surname_name = cmbRequiredDentist.SelectedItem.ToString().Split(' ');
                     conn.Open();
 
-                    string query1 = "SELECT id_medic FROM medici WHERE nume = @surname AND prenume = @name";
+                    string query1 = "SELECT id_dentist FROM medici WHERE nume = @surname AND prenume = @name";
                     MySqlCommand cmd = new MySqlCommand(query1, conn);
                     cmd.Parameters.AddWithValue("@surname", surname_name[0].ToString());
                     cmd.Parameters.AddWithValue("@name", surname_name[1].ToString());

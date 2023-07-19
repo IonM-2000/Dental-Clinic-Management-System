@@ -28,5 +28,13 @@ namespace DentalClinic
         {
 
         }
+
+        private void btnDentist_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new DentistAuthentication();
+            f.ShowDialog();
+            this.Close();
+        }
     }
 }
