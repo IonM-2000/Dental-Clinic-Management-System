@@ -85,6 +85,7 @@
             this.btnAdd.TabIndex = 64;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cmbIntervention
             // 
@@ -103,6 +104,7 @@
             this.btnBack.TabIndex = 62;
             this.btnBack.Text = "<< Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // nmrIntervention
             // 
@@ -200,7 +202,6 @@
             this.label1.Size = new System.Drawing.Size(133, 13);
             this.label1.TabIndex = 53;
             this.label1.Text = "APPOINTMENT DETAILS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // NewAppointment
             // 
@@ -226,6 +227,7 @@
             this.Name = "NewAppointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New appointment";
+            this.Load += new System.EventHandler(this.NewAppointment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nmrIntervention)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

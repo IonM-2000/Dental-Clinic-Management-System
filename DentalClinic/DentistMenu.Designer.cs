@@ -68,6 +68,7 @@
             this.btnAppointments.TabIndex = 50;
             this.btnAppointments.Text = "Appointments";
             this.btnAppointments.UseVisualStyleBackColor = true;
+            this.btnAppointments.Click += new System.EventHandler(this.btnAppointments_Click);
             // 
             // btnPacientDetails
             // 
@@ -78,6 +79,7 @@
             this.btnPacientDetails.TabIndex = 49;
             this.btnPacientDetails.Text = "Pacient Details";
             this.btnPacientDetails.UseVisualStyleBackColor = true;
+            this.btnPacientDetails.Click += new System.EventHandler(this.btnPacientDetails_Click);
             // 
             // btnNewAppointment
             // 
@@ -88,6 +90,7 @@
             this.btnNewAppointment.TabIndex = 48;
             this.btnNewAppointment.Text = "New appointment";
             this.btnNewAppointment.UseVisualStyleBackColor = true;
+            this.btnNewAppointment.Click += new System.EventHandler(this.btnNewAppointment_Click);
             // 
             // DentistMenu
             // 
