@@ -44,6 +44,7 @@
             this.btnIssue.TabIndex = 53;
             this.btnIssue.Text = "Issue the receipt";
             this.btnIssue.UseVisualStyleBackColor = true;
+            this.btnIssue.Click += new System.EventHandler(this.btnIssue_Click);
             // 
             // lblRemainigSum
             // 
@@ -70,7 +71,6 @@
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 50;
             this.label2.Text = "Now paying";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -80,7 +80,6 @@
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 49;
             this.label1.Text = "To Pay";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Payment
             // 

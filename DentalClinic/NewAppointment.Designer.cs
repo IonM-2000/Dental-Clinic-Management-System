@@ -35,11 +35,11 @@
             this.cmbIntervention = new System.Windows.Forms.ComboBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.nmrIntervention = new System.Windows.Forms.NumericUpDown();
-            this.tbCharge = new System.Windows.Forms.TextBox();
+            this.txtCharge = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tbMaterialCost = new System.Windows.Forms.TextBox();
+            this.txtMaterialCost = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbComments = new System.Windows.Forms.RichTextBox();
+            this.txtComments = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,13 +65,11 @@
             this.btnRemove.TabIndex = 66;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // lbInterventions
             // 
             this.lbInterventions.FormattingEnabled = true;
-            this.lbInterventions.Items.AddRange(new object[] {
-            "Drenaj dinte temporar",
-            "Extracție dinte temporar + anestezie fara ac pt copii"});
             this.lbInterventions.Location = new System.Drawing.Point(322, 166);
             this.lbInterventions.Name = "lbInterventions";
             this.lbInterventions.Size = new System.Drawing.Size(329, 108);
@@ -85,6 +83,7 @@
             this.btnAdd.TabIndex = 64;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cmbIntervention
             // 
@@ -103,6 +102,7 @@
             this.btnBack.TabIndex = 62;
             this.btnBack.Text = "<< Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // nmrIntervention
             // 
@@ -126,13 +126,13 @@
             0,
             0});
             // 
-            // tbCharge
+            // txtCharge
             // 
-            this.tbCharge.Location = new System.Drawing.Point(322, 445);
-            this.tbCharge.Margin = new System.Windows.Forms.Padding(2);
-            this.tbCharge.Name = "tbCharge";
-            this.tbCharge.Size = new System.Drawing.Size(174, 20);
-            this.tbCharge.TabIndex = 60;
+            this.txtCharge.Location = new System.Drawing.Point(322, 445);
+            this.txtCharge.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCharge.Name = "txtCharge";
+            this.txtCharge.Size = new System.Drawing.Size(174, 20);
+            this.txtCharge.TabIndex = 60;
             // 
             // label6
             // 
@@ -144,13 +144,13 @@
             this.label6.TabIndex = 59;
             this.label6.Text = "Charge";
             // 
-            // tbMaterialCost
+            // txtMaterialCost
             // 
-            this.tbMaterialCost.Location = new System.Drawing.Point(322, 412);
-            this.tbMaterialCost.Margin = new System.Windows.Forms.Padding(2);
-            this.tbMaterialCost.Name = "tbMaterialCost";
-            this.tbMaterialCost.Size = new System.Drawing.Size(174, 20);
-            this.tbMaterialCost.TabIndex = 58;
+            this.txtMaterialCost.Location = new System.Drawing.Point(322, 412);
+            this.txtMaterialCost.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaterialCost.Name = "txtMaterialCost";
+            this.txtMaterialCost.Size = new System.Drawing.Size(174, 20);
+            this.txtMaterialCost.TabIndex = 58;
             // 
             // label5
             // 
@@ -162,14 +162,14 @@
             this.label5.TabIndex = 57;
             this.label5.Text = "Cost of materials";
             // 
-            // tbComments
+            // txtComments
             // 
-            this.tbComments.Location = new System.Drawing.Point(322, 285);
-            this.tbComments.Margin = new System.Windows.Forms.Padding(2);
-            this.tbComments.Name = "tbComments";
-            this.tbComments.Size = new System.Drawing.Size(329, 95);
-            this.tbComments.TabIndex = 56;
-            this.tbComments.Text = "";
+            this.txtComments.Location = new System.Drawing.Point(322, 285);
+            this.txtComments.Margin = new System.Windows.Forms.Padding(2);
+            this.txtComments.Name = "txtComments";
+            this.txtComments.Size = new System.Drawing.Size(329, 95);
+            this.txtComments.TabIndex = 56;
+            this.txtComments.Text = "";
             // 
             // label4
             // 
@@ -200,7 +200,6 @@
             this.label1.Size = new System.Drawing.Size(133, 13);
             this.label1.TabIndex = 53;
             this.label1.Text = "APPOINTMENT DETAILS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // NewAppointment
             // 
@@ -214,11 +213,11 @@
             this.Controls.Add(this.cmbIntervention);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.nmrIntervention);
-            this.Controls.Add(this.tbCharge);
+            this.Controls.Add(this.txtCharge);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tbMaterialCost);
+            this.Controls.Add(this.txtMaterialCost);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.tbComments);
+            this.Controls.Add(this.txtComments);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -226,6 +225,8 @@
             this.Name = "NewAppointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New appointment";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NewAppointment_FormClosing);
+            this.Load += new System.EventHandler(this.NewAppointment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nmrIntervention)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,11 +242,11 @@
         private System.Windows.Forms.ComboBox cmbIntervention;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.NumericUpDown nmrIntervention;
-        private System.Windows.Forms.TextBox tbCharge;
+        private System.Windows.Forms.TextBox txtCharge;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tbMaterialCost;
+        private System.Windows.Forms.TextBox txtMaterialCost;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox tbComments;
+        private System.Windows.Forms.RichTextBox txtComments;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;

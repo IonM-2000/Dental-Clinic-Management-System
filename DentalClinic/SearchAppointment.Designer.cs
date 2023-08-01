@@ -34,7 +34,7 @@
             this.dpickerAppointDate = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPatient = new System.Windows.Forms.TextBox();
+            this.txtPatientName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPatientSurname = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -48,6 +48,7 @@
             this.btnSearch.TabIndex = 58;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnBack
             // 
@@ -58,6 +59,7 @@
             this.btnBack.TabIndex = 57;
             this.btnBack.Text = "<< Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label4
             // 
@@ -95,12 +97,12 @@
             this.label2.TabIndex = 53;
             this.label2.Text = "Name";
             // 
-            // txtPatient
+            // txtPatientName
             // 
-            this.txtPatient.Location = new System.Drawing.Point(157, 114);
-            this.txtPatient.Name = "txtPatient";
-            this.txtPatient.Size = new System.Drawing.Size(142, 20);
-            this.txtPatient.TabIndex = 52;
+            this.txtPatientName.Location = new System.Drawing.Point(157, 114);
+            this.txtPatientName.Name = "txtPatientName";
+            this.txtPatientName.Size = new System.Drawing.Size(142, 20);
+            this.txtPatientName.TabIndex = 52;
             // 
             // label1
             // 
@@ -129,7 +131,7 @@
             this.Controls.Add(this.dpickerAppointDate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPatient);
+            this.Controls.Add(this.txtPatientName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPatientSurname);
             this.Name = "SearchAppointment";
@@ -148,7 +150,7 @@
         private System.Windows.Forms.DateTimePicker dpickerAppointDate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPatient;
+        private System.Windows.Forms.TextBox txtPatientName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPatientSurname;
     }
